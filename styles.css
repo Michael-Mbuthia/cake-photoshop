@@ -119,9 +119,6 @@ h2{
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-address{
-    text-decoration: none;
-}
 
 /*footer*/
 .main-footer{
@@ -152,9 +149,8 @@ address{
     transform: translateY(-5px);
 }
 /*image hover effect*/
-.cake-item img{
-    transition: transform 0.3s;
-}
+
+
 .cake-item img:hover{
     transform: scale(1.03);
 }
