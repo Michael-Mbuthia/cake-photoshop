@@ -1,0 +1,178 @@
+* {
+    
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.home h2{
+    font-size: 30px;
+}
+.home p{
+    font-size: 18px;
+}
+h2{
+ 
+    font-size: 30px;
+}
+
+.main-nav{
+    background-color: #ff6f61;
+    padding: 5px;
+}
+.main-nav ul{
+    justify-content: center;
+    list-style: none;
+    display:flex;
+    gap: 2rem;
+}
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    margin: 0.15px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.main-nav a.active,
+.main-nav a:hover{
+    background-color: #d63e30
+}
+.container{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+.cake{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+.cake-display img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+
+}
+.cake-display{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.cake-display:hover{
+    transform: translateY(-10px);
+}
+.cake-display h3{
+    text-align: center;
+}
+
+
+
+/*cake page*/
+.cake-gallery{
+    background-color: #f8f8f8;
+}
+.cakes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+   
+}
+.cakes img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cakes img:hover{
+    transform: translateY(-10px);
+}
+/*contact page*/
+.contact-content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.contact-content section{
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+address{
+    text-decoration: none;
+}
+
+/*footer*/
+.main-footer{
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+.footer-content{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.social-links{
+    margin-bottom: 1.5rem;
+    
+    
+}
+.social-link{
+    color: white;
+    font-size: 1.6rem;
+    margin: 0.7rem;
+    transition : transform 0.5s ease, color 0.5s ease; 
+}
+.social-link:hover{
+    color:red;
+    transform: translateY(-5px);
+}
+/*image hover effect*/
+.cake-item img{
+    transition: transform 0.3s;
+}
+.cake-item img:hover{
+    transform: scale(1.03);
+}
+/*navigation Link animation*/
+.main-nav a{
+position: relative;
+overflow: hidden;
+}
+.main-nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s ease;
+}
+.main-nav a:hover:after{
+    width: 100%;
+}
