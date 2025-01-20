@@ -18,7 +18,6 @@ h2{
  
     font-size: 30px;
 }
-
 .main-nav{
     background-color: #ff6f61;
     padding: 5px;
@@ -42,6 +41,7 @@ h2{
 .main-nav a:hover{
     background-color: #d63e30
 }
+
 .container{
     padding: 20px;
 }
